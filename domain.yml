@@ -1,0 +1,57 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - admission_inquiry
+  - fee_structure
+  - ask_courses
+  - ask_fees
+  - ask_duration
+  - ask_eligibility
+  - ask_merit
+  - ask_hostel
+
+responses:
+  utter_greet:
+    - text: "Hey! How are you?"
+  utter_goodbye:
+    - text: "Bye!"
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+  utter_admission_info:
+    - text: "The admission process includes filling out an online application and appearing for the entrance exam."
+  utter_fee_structure:
+    - text: "The fee structure for engineering colleges is around 75,000 per year."
+  utter_ask_courses:
+    - text: "We offer a wide range of courses such as B.Tech, MBA, BBA, etc. You can check the complete list on our website."
+  utter_ask_fees:
+    - text: "The tuition fee varies by course. Please mention the course you are interested in."
+  utter_ask_duration:
+    - text: "Different courses have different durations:\n- B.Tech is 4 years\n- M.Tech is 2 years\n- Diploma is 3 years."
+  utter_ask_eligibility:
+    - text: "Eligibility criteria vary for different courses. Please mention the course you are asking about."
+  utter_ask_merit:
+    - text: "Merit is typically based on the percentage of marks in the qualifying examination. Please specify the course if you need more detailed criteria."
+  utter_ask_hostel:
+    - text: "Yes, we have separate hostels for boys and girls with modern facilities."
+  utter_cheer_up:
+    - text: "Hey, don't worry! Things will get better soon. 😊"
+
+actions:
+  - utter_ask_courses
+  - utter_ask_fees
+  - utter_ask_duration
+  - utter_ask_eligibility
+  - utter_ask_merit
+  - utter_ask_hostel
+  - utter_cheer_up
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
