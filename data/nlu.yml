@@ -1,0 +1,56 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hello
+    - Hey
+- intent: goodbye
+  examples: |
+    - Bye
+    - Goodbye
+- intent: mood_great
+  examples: |
+    - I am feeling great
+    - I am good
+- intent: mood_unhappy
+  examples: |
+    - I am feeling sad
+    - I am not happy
+- intent: bot_challenge
+  examples: |
+    - Are you a bot?
+    - Prove that you are a bot
+- intent: admission_inquiry
+  examples: |
+    - How can I apply for admission?
+    - Tell me about the admission process
+- intent: fee_structure
+  examples: |
+    - What is the fee structure?
+    - How much does it cost?
+- intent: ask_courses
+  examples: |
+    - What courses do you offer?
+    - Can you tell me about the courses?
+- intent: ask_fees
+  examples: |
+    - What are the fees for engineering?
+    - How much is the tuition fee?
+- intent: ask_duration
+  examples: |
+    - What is the duration of the courses?
+    - How long is the B.Tech course?
+- intent: ask_eligibility
+  examples: |
+    - What is the eligibility criteria for B.Tech?
+    - Who can apply for the courses?
+- intent: ask_merit
+  examples: |
+    - How is merit calculated?
+    - What are the merit criteria?
+- intent: ask_hostel
+  examples: |
+    - Do you have hostels?
+    - What are the hostel facilities like?

@@ -1,0 +1,71 @@
+version: "2.0"
+
+stories:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: admission inquiry path
+  steps:
+  - intent: admission_inquiry
+  - action: utter_admission_info
+
+- story: fee structure inquiry
+  steps:
+  - intent: fee_structure
+  - action: utter_fee_structure
+
+- story: greet and ask about admissions
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: admission_inquiry
+  - action: utter_ask_admissions
+
+- story: ask about hostel
+  steps:
+  - intent: ask_hostel
+  - action: utter_ask_hostel
+
+- story: user asks about courses
+  steps:
+  - intent: ask_courses
+  - action: utter_ask_courses
+
+- story: user asks about course duration
+  steps:
+  - intent: ask_duration
+  - action: utter_ask_duration
+
+- story: user checks eligibility criteria
+  steps:
+  - intent: ask_eligibility
+  - action: utter_ask_eligibility
+
+- story: user asks about merit criteria
+  steps:
+  - intent: ask_merit
+  - action: utter_ask_merit

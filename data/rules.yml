@@ -1,0 +1,42 @@
+version: "2.0"
+
+rules:
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Respond to course inquiries
+  steps:
+  - intent: ask_courses
+  - action: utter_ask_courses
+
+- rule: Respond to fee inquiries
+  steps:
+  - intent: ask_fees
+  - action: utter_ask_fees
+
+- rule: Respond to duration inquiries
+  steps:
+  - intent: ask_duration
+  - action: utter_ask_duration
+
+- rule: Respond to eligibility inquiries
+  steps:
+  - intent: ask_eligibility
+  - action: utter_ask_eligibility
+
+- rule: Respond to merit-based criteria inquiries
+  steps:
+  - intent: ask_merit
+  - action: utter_ask_merit
+
+- rule: Respond to hostel inquiries
+  steps:
+  - intent: ask_hostel
+  - action: utter_ask_hostel
